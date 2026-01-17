@@ -1,5 +1,5 @@
 // 1. Inisialisasi Variabel
-const nama = "MONSTER";
+const nama = "ixtsuki";
 const peran = "Penyihir";
 
 /**
