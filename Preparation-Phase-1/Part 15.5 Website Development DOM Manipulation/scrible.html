@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoh DOM Manipulasi</title>
+    </head>
+    <body>
+        <h1 id="mungkinJudul">Selamat Datang</h1>
+        <button id="iniSihTombol">Ubah Judul</button>
+        <br/>
+        <h1>Daftar Buah yang akmw</h1>
+        <ul id="listBuahSih">
+            <li>Apel</li>
+            <li>Asparagus</li>
+            <li>Mandrake</li>
+            <li>Pear</li>
+        </ul>
+        <button id="tambahBuah">Tambah Buah</button>
+        <button id="removeBuah">Kurangi Buah</button>
+    
+        <script type="module">
+            const judulElemen = document.getElementById("mungkinJudul");
+            const tombolElemen = document.getElementById("iniSihTombol");
+    
+            tombolElemen.addEventListener("click", () => judulElemen.textContent = judulElemen.textContent === "Hello World" ? "Halo Dunia" : "Hello World");
+
+            const listBuahElemen = document.getElementById("listBuahSih");
+            const tombolTambahElemen = document.getElementById("tambahBuah");
+            const tombolKurangElemen = document.getElementById("removeBuah");
+
+            tombolTambahElemen.addEventListener("click", () => {
+                const daftarBuah = [
+                    "Anggur", "Pisang", "Honda",
+                    "Dada", "Apel", "Asparagus",
+                    "Mandrake", "Pear", "Kamu :*"
+                ];
+                const li = document.createElement("li");
+                li.textContent = daftarBuah[Math.floor(Math.random()*daftarBuah.length)];
+                listBuahElemen.appendChild(li);
+            });
+
+            tombolKurangElemen.addEventListener("click", () => {
+                const li = listBuahElemen.lastElementChild;
+                if (li) listBuahElemen.removeChild(li);
+            })
+        </script>
+    </body>
+</html>

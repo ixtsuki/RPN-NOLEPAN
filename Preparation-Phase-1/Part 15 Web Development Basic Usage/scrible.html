@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contoh halaman website</title>
+        <style>
+            h1 {
+                font-size: xx-large;
+            }
+            p.ew {
+                color: mediumturquoise;
+            }
+
+            .box {
+                padding: 10px;
+                margin: 20px;
+            }
+
+            .button:hover {
+                background-color: aqua;
+            }
+
+            .button:active {
+                background-color: bisque;
+            }
+
+            blockquote::before {
+                content: "*";
+            }
+
+            blockquote::after {
+                content: "*";
+            }
+
+            @keyframes moveRight {
+                from {
+                    transform: translateX(0)
+                }
+                to {
+                    transform: translateX(100px);
+                }
+            }
+
+            @keyframes moveLeft {
+                from {
+                    transform: translateX(100px);
+                } to {
+                    transform: translateX(0);
+                }
+            }
+
+            .theFuckIsGoing {
+                animation: moveLeft 3s;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Selamat Datang di website saya</h1>
+        <p class="ew">ini adalah contoh halaman website</p>
+
+        <h1 class="button">Judul 1</h1>
+        <h2>Judul 2</h2>
+        <h3>Judul 3</h3>
+        <h4>Judul 4</h4>
+        <h5>Judul 5</h5>
+        <h6>Judul 6</h6>
+
+        <p>paragraf</p>
+
+        <strong class="box">tebal</strong>
+
+        <em>miring</em>
+
+        <img src="https://imgur.com/4TaaYpq.gif" alt="deku tersenyum" width="20"/>
+
+        <ul class="theFuckIsGoing">
+            Unordered List
+            <li>Item pertama</li>
+            <li>Item kedua</li>
+            <li>Item ketiga</li>
+        </ul>
+
+        <ol>
+            Ordered List
+            <li>Langkah pertama</li>
+            <li>Langkah kedua</li>
+            <li>Langkah ketiga</li>
+        </ol>
+
+        <blockquote>
+            <p class ="ew">
+                What happen when you click the button
+            </p>
+        </blockquote>
+
+        <button class="button">Yo</button>
+
+        <form action="/prosses" method="post">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" required/>
+            <br/>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required/>
+            <br/>
+            <label for="no">No</label>
+            <input type="checkbox" id="no" name="no"required/>
+            <input class="button" type="submit" value="Kirim"/>
+        </form>
+    </body>
+</html>

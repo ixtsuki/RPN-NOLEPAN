@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box; 
+}
+
+ul#list {
+  margin: 0;
+  padding: 0;
+}
+
+ul#list li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+ul#list li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul#list li:hover {
+  background: #ddd;
+}
+
+ul#list li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul#list li span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+ul#list li span:hover {
+  background-color: #7dda58;
+  color: white
+}
+
+div.header {
+  background-color: #7dda58;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+div.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input#input {
+  margin: 0;
+  border: white;
+  border-radius: 50px;
+  width: 100%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
