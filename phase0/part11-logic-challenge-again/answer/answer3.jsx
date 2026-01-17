@@ -1,5 +1,5 @@
 //TIPS: gunakan method toUpperCase() dan toLowerCase()
-function tukarBesarKecil(kalimat: string): string {
+function tukarBesarKecil(kalimat) {
     return kalimat
         .split("")
         .map(x => (

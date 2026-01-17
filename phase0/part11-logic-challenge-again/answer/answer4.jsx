@@ -11,7 +11,7 @@ karena di bagian 'barian' terdapat b dipisah 3 karakter ari(totalnya 3) dan kete
 Spasi juga dianggap sebagai karakter
 */
 
-function checkAB(num: string): boolean {
+function checkAB(num){
     let a = -1, b = -1;
     for (let i = 0; i < num.length; i++) {
         if (num[i] === "a") a = i;

@@ -1,6 +1,6 @@
 //DILARANG MENGGUNAKAN METHOD SORT, PELAJARI ALGORITMA SORTING YANG ADA DI GOOGLE
 //saran sih pake bubblesort walau tidak efisien tapi bagus buat belajar sorting
-function urutkanAbjad(str: string): string {
+function urutkanAbjad(str) {
     const results = str.split("").map(x => x.charCodeAt(0));
     for (let ii = 0; ii < results.length; ii++) {
         for (let i = 0; i < results.length - 1; i++) {
